@@ -1,0 +1,113 @@
+:root{
+    --color: #088178;
+    --color-2: #fddde4;
+}
+
+/* Header Start  */
+
+#header{
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: var(--color);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: var(--color);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* Home page  */
+
+#hero{
+    background: url("img/hero4.png") center/cover;
+    height: 90vh;
+    width: 100%;
+    /* background-size: cover; */
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: center; */
+}
+
+#hero h4{
+    padding-bottom: 15px;
+}
+
+#hero h1{
+    color:var(--color) ;
+}
+
+#hero button{
+    background: url("img/button.png") no-repeat;
+    background-color: transparent;
+    color: var(--color);
+    border: 0;
+    padding: 18px 107px 18px 80px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#feature{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box h6{
+    display: inline-block;
+    padding:9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: var(--color);
+    background-color: var(--color-2) ;
+}
