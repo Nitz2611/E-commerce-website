@@ -82,3 +82,15 @@ button.normal-2{
     transition: 0.2s;
 }
 
+@media (max-width:899px) {
+
+    .section-p1 {
+        padding: 40px;
+    }
+}
+
+@media (max-width:477px){
+    .section-p1{
+        padding: 20px;
+    }
+}
