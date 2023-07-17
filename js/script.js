@@ -1,9 +1,10 @@
 
 const bar = document.getElementById('bar');
 const nav = document.getElementById('navbar');
-
 const close = document.getElementById('close');
 
+
+// js for hamburger sidebar menu --> START
 if(bar){
     bar.addEventListener('click',()=>{
         nav.classList.add('active');
@@ -15,3 +16,5 @@ if(close){
         nav.classList.remove('active');
     })
 }
+
+// --> END
