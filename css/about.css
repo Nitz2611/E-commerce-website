@@ -1,31 +1,29 @@
-
-
-#page-header.about-header{
+#page-header.about-header {
     background: url(../img/about/banner.png);
 }
 
 
-#about-head img{
+#about-head img {
     width: 50%;
     height: auto;
 
 }
 
-#about-head div{
+#about-head div {
     padding-left: 40px;
 }
 
-#about-app{
+#about-app {
     text-align: center;
 }
 
-#about-app .video{
+#about-app .video {
     width: 70%;
     height: 100%;
     margin: 30px auto 0 auto;
 }
 
-#about-app .video video{
+#about-app .video video {
     width: 100%;
     height: 100%;
     border-radius: 20px;
@@ -34,20 +32,20 @@
 
 @media (max-width: 477px) {
 
-    #about-head{
+    #about-head {
         flex-direction: column;
     }
-    
-    #about-head img{
+
+    #about-head img {
         width: 100%;
         margin-bottom: 20px;
     }
 
-    #about-head div{
+    #about-head div {
         padding-left: 0px;
     }
 
-    #about-app .video{
+    #about-app .video {
         width: 100%;
     }
 }

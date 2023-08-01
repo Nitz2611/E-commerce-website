@@ -1,63 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'League Spartan', sans-serif;
 }
-body{
+
+body {
     width: 100%;
 }
 
 
 
-h1{
+h1 {
     font-size: 50px;
     line-height: 64px;
     color: #222;
 
 }
-h2{
+
+h2 {
     font-size: 46px;
     line-height: 54px;
     color: #222;
 }
-h4{
+
+h4 {
     font-size: 20px;
     color: #222;
 }
-h6{
+
+h6 {
     font-weight: 700;
     font-size: 12px;
 
 }
 
-p{
+p {
     font-size: 16px;
     color: #465b52;
     margin: 15px 0 20px 0;
 }
 
-.flex{
+.flex {
     display: flex;
 }
-.align-center{
+
+.align-center {
     align-items: center;
 }
-.justify-center{
+
+.justify-center {
     justify-content: center;
 }
 
-.section-p1{
+.section-p1 {
     padding: 40px 80px;
 }
 
-.section-m1{
+.section-m1 {
     margin: 40px 0;
 }
 
-button.normal{
+button.normal {
     font-size: 14px;
     font-weight: 600;
     padding: 15px 30px;
@@ -70,12 +76,12 @@ button.normal{
     transition: 0.2s;
 }
 
-button.normal-2{
+button.normal-2 {
     font-size: 13px;
     font-weight: 600;
     padding: 11px 18px;
     color: white;
-    background-color: transparent;   
+    background-color: transparent;
     cursor: pointer;
     border: 1px solid white;
     outline: none;
@@ -89,8 +95,8 @@ button.normal-2{
     }
 }
 
-@media (max-width:477px){
-    .section-p1{
+@media (max-width:477px) {
+    .section-p1 {
         padding: 20px;
     }
 }
