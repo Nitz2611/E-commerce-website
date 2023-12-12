@@ -42,3 +42,4 @@ smallImg[3].onclick = function () {
 }
 // --> END
 
+// Wanted to add some backend in this. Coming soon
