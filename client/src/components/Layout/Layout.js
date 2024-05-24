@@ -28,8 +28,8 @@ function Layout({ children, title, description, keywords, author }) {
 };
 
 Layout.defaultProps = {
-    title: "MERN Shopping website",
-    description: "mern stack project",
+    title: "Cara shopping website",
+    description: "One stop shopping online",
     keywords: "mern,react,node,mongodb",
     author: "Nitish sharma",
 };
