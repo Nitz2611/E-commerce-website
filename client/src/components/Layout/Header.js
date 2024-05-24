@@ -1,14 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { NavLink, Link } from "react-router-dom";
 // import logoImg from '../../../public/img/logo.png'
 const Header = () => {
+
+    const [isNavActive, setIsNavActive] = useState(false);
+
+    const handleBarClick = () => {
+        setIsNavActive(true);
+    };
+
+    const handleCloseClick = () => {
+        setIsNavActive(false);
+    };
     return (
         <div id="header" className="flex align-center">
             <Link to='/' >
                 <img src='/img/logo.png' className="logo" alt="logo" />
             </Link>
             <div>
-                <ul id="navbar" className="flex align-center justify-center">
+                <ul id="navbar" className={`flex align-center justify-center ${isNavActive ? 'active' : ''}`}>
                     <li>
                         <NavLink to='/' className="active">
                             Home
@@ -31,7 +41,7 @@ const Header = () => {
                             <i className="fa-solid fa-bag-shopping" />
                         </NavLink>
                     </li>
-                    <a href="/" id="close">
+                    <a href="/" id="close" onClick={handleCloseClick}>
                         {" "}
                         <i className="fa-solid fa-xmark" />{" "}
                     </a>
@@ -41,7 +51,7 @@ const Header = () => {
                 <NavLink to='/cart'>
                     <i className="fa-solid fa-bag-shopping" />
                 </NavLink>
-                <i id="bar" className="fas fa-outdent" />
+                <i id="bar" className="fas fa-outdent" onClick={handleBarClick} />
             </div>
         </div>
 
